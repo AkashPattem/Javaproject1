@@ -6,7 +6,7 @@ environment {
 stages {
 stage('Clean stage') {
 steps {
-dir("CALCULATOR") {
+dir("StockApp") {
 bat 'C:/Users/akash/Downloads/apache-maven-3.9.9-bin/apache-maven-3.9.9/bin/mvn clean'
 }
 }
@@ -14,7 +14,7 @@ bat 'C:/Users/akash/Downloads/apache-maven-3.9.9-bin/apache-maven-3.9.9/bin/mvn 
 
 stage('Compile stage') {
 steps {
-dir("CALCULATOR") {
+dir("StockApp") {
 bat 'C:/Users/akash/Downloads/apache-maven-3.9.9-bin/apache-maven-3.9.9/bin/mvn compile'
 }
 }
@@ -22,7 +22,7 @@ bat 'C:/Users/akash/Downloads/apache-maven-3.9.9-bin/apache-maven-3.9.9/bin/mvn 
 
 stage('Install stage') {
 steps {
-dir("CALCULATOR") {
+dir("StockApp") {
 bat 'C:/Users/akash/Downloads/apache-maven-3.9.9-bin/apache-maven-3.9.9/bin/mvn install'
 }
 }
